@@ -11,4 +11,3 @@ try:
     sys.path.append(p)
 except:
     print("module import not success please check config file")
-
