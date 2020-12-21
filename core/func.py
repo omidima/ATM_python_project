@@ -90,3 +90,8 @@ def getChash():
 def setChash(n):
     f = open("data/chash.txt", "w")
     f.write(n)
+
+def clossApp():
+    os.system("cls")
+    print("Thansk for selection")
+    

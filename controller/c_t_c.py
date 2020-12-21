@@ -10,39 +10,35 @@ from view import home
 # @run: 2=> (money not enough): unsuccess
 # @run: 3=> (card invalid): error
 # @load: view=>home
-
-
 def c_t_c(num_1, num_2, count):
     try:
         f1 = open("data/"+num_1+"/data.txt", "r")
         f2 = open("data/"+num_2+"/data.txt", "r")
         money_1 = f1.read().split(":")
         money_2 = f2.read().split(":")
-        f1.close()
-        f2.close()
         temp = money_change(money_1[1])
         if temp > int(count):
             os.system("cls")
             money_1 = money_change(money_1[1])-int(count)
             money_2 = money_change(money_2[1])+int(count)
-            f1 = open("data/"+num_1+"/data.txt", "w")
-            f2 = open("data/"+num_2+"/data.txt", "w")
-            f1.write("money:{}$".format(money_1))
-            f2.write("money:{}$".format(money_2))
-            
+            f_1 = open("data/"+num_1+"/data.txt", "w")
+            f_2 = open("data/"+num_2+"/data.txt", "w")
+            f_1.write("money:{}$".format(money_1))
+            f_2.write("money:{}$".format(money_2))
+            f_1.close()
+            f_2.close()
             print("proccess successful")
             home.main()
         else:
             os.system("cls")
             print("you are not enough cash. please charge account")
             home.main()
-
     except:
         os.system("cls")
         print("incorrect card number please check again")
         home.main()
 
-def checker(c2,money):
+def start(c2,money):
     if c2 == "0":
         home.main()
     if func.number_check(c2) == True:
@@ -56,6 +52,3 @@ def checker(c2,money):
 def money_change(num):
     temp=num.replace("$"," ")
     return int(temp)
-
-
-c_t_c("6037998143622743","6037997468139911",5)
