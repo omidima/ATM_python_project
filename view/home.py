@@ -4,8 +4,7 @@ from controller import home
 from core import func
 
 def main():
-    
-    os.system("cls")
+
     print(
         "|                  home page                   |"+"\n" +
         "|           please select a function           |"+"\n" +

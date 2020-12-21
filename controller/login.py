@@ -14,6 +14,7 @@ def login_check(username,password,temp):
             check = username
     if check != None:
         func.setChash(check)
+        os.system("cls")
         home.main()
     else:
         os.system("cls")
