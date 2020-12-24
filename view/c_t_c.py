@@ -4,7 +4,6 @@ from core import func
 from controller import c_t_c
 
 def main():
-    os.system("cls")
     
     print(
         "|                  cart to cart                   |"+"\n" +

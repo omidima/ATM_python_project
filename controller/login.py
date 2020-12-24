@@ -3,6 +3,7 @@ import os
 from core import func
 from view import home
 from view import login
+from view import signup
 
 def login_check(username,password,temp):
     n = func.getNumber()
@@ -30,5 +31,9 @@ def login_check(username,password,temp):
 def load_start():
     os.system("cls")
     login.main(3)
+
+def load_signup():
+    os.system("cls")
+    signup.main()
 
 

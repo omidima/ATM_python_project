@@ -1,8 +1,3 @@
-number:4521 password:654123 name:ali hadidy
-number:38978 password:321456 name:sdfg fdsg
-number:6037997468139911 password:234567 name:ahmad salary
-number:6037998143622743 password:12345 name:omid hadidy 
-number:45263 password:1111 name:xcvb xf
-number:69389 password:1111 name:uik zsdgv zsdgb
-number:785786 password:5112 name:zv xdcb
-number:332266 password:5112 name:reza razy
+number:6037697434877988 password:5112 name:mansore arabasady
+number:6037997468139911 password:1234 name:ahmad salary
+number:6037998143622743 password:5183 name:omid hadidy 

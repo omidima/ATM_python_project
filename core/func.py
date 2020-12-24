@@ -91,7 +91,17 @@ def setChash(n):
     f = open("data/chash.txt", "w")
     f.write(n)
 
+# close app function
+# @return:none
 def clossApp():
     os.system("cls")
     print("Thansk for selection")
+
+# change money:@$ data to @
+# @input: money data
+# @return: string(int)
+def cashChange(cash):
+    money = cash.split(":")
+    money = money[1].replace("$"," ")
+    return money
     

@@ -1,36 +1,13 @@
 import config
 import os
 from core import func
+from view import rm
 from view import home
 from view import c_t_c
 from view import mlo
 from view import pc
 
 
-
-
-
-
-
-def two(parameter_list):
-    """
-    docstring
-    """
-    pass
-
-
-def there(parameter_list):
-    """
-    docstring
-    """
-    pass
-
-
-def four(parameter_list):
-    """
-    docstring
-    """
-    pass
 
 
 # select option checker
@@ -52,13 +29,17 @@ def s_check(select):
 # return: none
 def s_dir(s):
     if s == "0":
+        os.system("cls")
         func.clossApp()
     elif s =="1":
+        os.system("cls")
         c_t_c.main()
     elif s == "2":
+        os.system("cls")
         mlo.main()
     elif s == "3":
+        os.system("cls")
         pc.main()
-    
-        
-        
+    elif s == "4":
+        os.system("cls")
+        rm.main()
