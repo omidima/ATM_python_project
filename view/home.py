@@ -11,7 +11,7 @@ def main():
         "|----------------------------------------------|"+"\n" +
         "| 1 => cart to cart       2 => money left ouer |"+"\n" +
         "| 3 => change password    4 => recive money    |"+"\n" +
-        "| 5 => inccrese money     0 => close app       |"+"\n"
+        "| 0 => close app                               |"+"\n"
     )
 
 

@@ -11,8 +11,12 @@ def main():
         "|-------------------------------------------------|"+"\n"
     )
 
-    c2=input("target card number => ")
+    c2 = input("target card number for cancell insert 0 => ")
+    if c2 == "0":
+        func.clossApp()
+        return 0
     money = input("cash to transfer ($) for cancell insert 0 => ")
+    
     c_t_c.start(c2, money)
     
 
