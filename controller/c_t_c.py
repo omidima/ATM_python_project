@@ -10,9 +10,15 @@ from view import home
 # @run: 2=> (money not enough): unsuccess
 # @run: 3=> (card invalid): error
 # @load: view=>home
-def c_t_c(num_1, num_2, count):
+def c(num_1, num_2, count):
     f1 = open("data/"+num_1+"/data.txt", "r")
-    f2 = open("data/"+num_2+"/data.txt", "r")
+    f2=None
+    try:
+        f2 = open("data/"+num_2+"/data.txt", "r")
+    except:
+        os.system("cls")
+        print("card number incorrect please try again")
+        return c_t_c.main()
     money_1 = f1.read().split(":")
     money_2 = f2.read().split(":")
     temp = money_change(money_1[1])
@@ -27,22 +33,20 @@ def c_t_c(num_1, num_2, count):
         f_1.close()
         f_2.close()
         print("proccess successful")
-        home.main()
+        return home.main()
     else:
         os.system("cls")
         print("you are not enough cash. please charge account")
-        home.main()
+        return c_t_c.main()
 
 def start(c2,money):
-    if c2 == "0":
-        home.main()
     if func.number_check(c2) == True:
         c1 = func.getChash()
-        c_t_c(c1, c2, money)
+        c(c1, c2, money)
     else:
         os.system("cls")
         print("card number incorrect please try again")
-        home.main()
+        return c_t_c.main()
 
 # get param: string$
 # @return: int

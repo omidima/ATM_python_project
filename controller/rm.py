@@ -17,11 +17,11 @@ def r_m(val):
         f.close()
         os.system("cls")
         print("procces ssuccessful \n")
-        home.main()
+        return home.main()
     else:
         os.system("cls")
         print("you are not enough money \n")
-        home.main()
+        return home.main()
 
 
 def input_check(input):
@@ -31,4 +31,4 @@ def input_check(input):
     except:
         os.system("cls")
         print("value incorrect. please try again")
-        rm.main()
+        return rm.main()

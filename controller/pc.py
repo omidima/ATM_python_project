@@ -43,4 +43,4 @@ def changePass(password):
     setData(temp_arr)
     os.system("cls")
     print("proccess successful")
-    home.main()
+    return home.main()

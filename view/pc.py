@@ -8,12 +8,12 @@ def main():
     print(
         "|               password change                |"+"\n" +
         "|          please insert new password          |"+"\n" +
-        "|              inter 0 to exit app             |"+"\n" +
+        "|          inter 0 to cancell proccess         |"+"\n" +
         "|----------------------------------------------|"+"\n" 
     )
 
     password = input("new Password => ")
     if password == "0":
-        func.clossApp()
+        func.cancell()
         return 0
     pc.changePass(password)

@@ -1,4 +1,5 @@
 import os
+from view import home
 
 """
 # comment:
@@ -96,6 +97,12 @@ def setChash(n):
 def clossApp():
     os.system("cls")
     print("Thansk for selection")
+
+# cancell the proccess
+# @return:none
+def cancell():
+    os.system("cls")
+    return home.main()
 
 # change money:@$ data to @
 # @input: money data

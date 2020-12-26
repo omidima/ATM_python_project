@@ -15,7 +15,7 @@ def n_c(dictionary):
         dictionary["number"], dictionary["password"], dictionary["name"])
     os.system("cls")
     print("proccess successful \n")
-    login.main(3)
+    return login.main(3)
 
     
 

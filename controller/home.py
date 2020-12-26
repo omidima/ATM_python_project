@@ -21,7 +21,7 @@ def s_check(select):
     if temp == 0:
         os.system("cls")
         print("option invalid please try again")
-        home.main()
+        return home.main()
     else: 
         return select
 
@@ -30,16 +30,16 @@ def s_check(select):
 def s_dir(s):
     if s == "0":
         os.system("cls")
-        func.clossApp()
+        return func.clossApp()
     elif s =="1":
         os.system("cls")
-        c_t_c.main()
+        return c_t_c.main()
     elif s == "2":
         os.system("cls")
-        mlo.main()
+        return mlo.main()
     elif s == "3":
         os.system("cls")
-        pc.main()
+        return pc.main()
     elif s == "4":
         os.system("cls")
-        rm.main()
+        return rm.main()

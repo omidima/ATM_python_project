@@ -16,13 +16,13 @@ def login_check(username,password,temp):
     if check != None:
         func.setChash(check)
         os.system("cls")
-        home.main()
+        return home.main()
     else:
         os.system("cls")
         print("information incorrect please try again \n")
         temp-=1
         if temp > 0:
-            login.main(temp)
+            return login.main(temp)
         else:
             os.system("cls")
             print("you cant login to app")
@@ -30,9 +30,9 @@ def login_check(username,password,temp):
 # login and signup start
 def load_start():
     os.system("cls")
-    login.main(3)
+    return login.main(3)
 def load_signup():
     os.system("cls")
-    signup.main()
+    return signup.main()
 
 
