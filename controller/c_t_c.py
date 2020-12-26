@@ -44,6 +44,8 @@ def start(c2,money):
         print("card number incorrect please try again")
         home.main()
 
+# get param: string$
+# @return: int
 def money_change(num):
     temp=num.replace("$"," ")
     return int(temp)

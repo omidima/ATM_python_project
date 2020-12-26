@@ -27,11 +27,10 @@ def login_check(username,password,temp):
             os.system("cls")
             print("you cant login to app")
         
-
+# login and signup start
 def load_start():
     os.system("cls")
     login.main(3)
-
 def load_signup():
     os.system("cls")
     signup.main()
