@@ -13,10 +13,14 @@ def main():
     )
 
     number = input("input card number len(16) => ")
-    password = input("insert a password => ")
-    money = input("insert a first defult money ($) => ")
-    name = input("insert your name => ")
-    val = {"number":number,"password":password,"money":money,"name":name}
-    signup.n_c(val)
-
+    if func.card_number_check(number):
+        password = input("insert a password => ")
+        money = input("insert a first defult money ($) => ")
+        name = input("insert your name => ")
+        val = {"number":number,"password":password,"money":money,"name":name}
+        signup.n_c(val)
+    else:
+        os.system("cls")
+        print("card number is invalid please try again")
+        main()
 

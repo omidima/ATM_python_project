@@ -1,3 +1,4 @@
+import config
 import os
 from view import home
 
@@ -111,4 +112,12 @@ def cashChange(cash):
     money = cash.split(":")
     money = money[1].replace("$"," ")
     return money
+    
+def card_number_check(number):
+        directory = os.listdir('data')
+        if number in directory:
+            return False
+        else:
+            return True
+
     
